@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    /* top: 0;
+    left: 0; */
+    background: #f2f9ed;
+    font-family: poppins;
+}
+h1{
+    width: fit-content;
+    font-weight: 700;
+    font-size: 64px;
+    color: #61481c;
+    margin:2rem auto;
+    line-height:96px ;
+}
+
+h1 span{
+    color: #47a200;
+}
+
+.main-div{
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 660px;
+    height: 810px;
+    border-radius: 15px;
+    background: #FBFBFB;
+    position: relative;
+
+}
+.heading{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: relative; */
+}
+.heading h2{
+    width: 125px;
+    height: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-left: 45px;
+    display: inline-block;
+}
+
+.heading  img{
+    height: 50px;
+    width: 50px;
+    margin: -15px 0px;
+    
+    /* margin-top: 20px; */
+}
+.heading p{
+    margin-left: 45px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #858585;
+    margin-top: 28px;
+}
+
+.progressBar{
+    width: 574px;
+    height: 30px;
+    border-radius: 15px;
+    background: rgba(72, 163, 0, 0.1);
+    margin: 15px auto;
+}
+
+.warningMsg{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ff5151;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+
+.inputFields{
+    width: 570px;
+    height: 82px;
+    border-radius: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 45px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 46px;
+    
+}
+
+input[type="checkbox"]{
+    margin: 5px 10px;
+    display: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    height: 24px;
+    width: 24px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    border-radius:50%;
+    z-index: 1;
+  }
+  .checkmark:hover{
+
+  }
+
+input:checked ~ .checkmark {
+    background-color: #47a200;
+  }
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+  }
+
+.checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  input[type="text"]::placeholder{
+   
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    color:rgba(217, 217, 217, 1) ;
+  }
+  input[type="text"]{
+    width: 364px;
+    height: 28px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-left: 4rem;
+    outline: none;
+    border: none;
+    background: inherit;
+    clear: rgba(0, 0, 0, 1);
+  }
+
+ .thaught-heading p {
+    width: 364px;
+    height: 28px;
+    font-weight: 500;
+    size: 16px;
+    text-align: center;
+    color: #000;
+    line-height: 24px;
+    margin: 70px auto;
+  }
+
+  .footer p{
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+    color: rgba(133, 133, 133, 1);
+    margin-top: 15px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    body{
+        /* background-color: red; */
+    }
+     h1{
+        font-size: 40px;
+        
+    }
+    .main-div{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .heading img{
+        transform: scale(.7);
+        margin-left: -40px;
+    }
+    .progressBar,.inputFields,.thaught-heading p{
+        width: 303px;
+    
+    }
+    .main-div{
+        height: 700px;
+        
+    }
+    .heading h2, .heading p,.warningMsg,.inputFields{
+        margin-left: 25px;
+    }
+    /* .thaught-heading p{
+        text-align: center;
+    } */
+  }
